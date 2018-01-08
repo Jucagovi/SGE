@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-12-2017 a las 17:58:22
+-- Tiempo de generación: 08-01-2018 a las 10:09:49
 -- Versión del servidor: 10.1.28-MariaDB
 -- Versión de PHP: 5.6.32
 
@@ -37,6 +37,11 @@ CREATE TABLE `gen_accede` (
   `id_permiso` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
+--
+-- Truncar tablas antes de insertar `gen_accede`
+--
+
+TRUNCATE TABLE `gen_accede`;
 -- --------------------------------------------------------
 
 --
@@ -53,6 +58,11 @@ CREATE TABLE `gen_accede_his` (
   `id_tipo_acceso` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
+--
+-- Truncar tablas antes de insertar `gen_accede_his`
+--
+
+TRUNCATE TABLE `gen_accede_his`;
 -- --------------------------------------------------------
 
 --
@@ -70,6 +80,11 @@ CREATE TABLE `gen_empleados` (
   `contrasena` text COLLATE latin1_general_ci NOT NULL COMMENT 'Contraseña de acceso a la aplicación'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
+--
+-- Truncar tablas antes de insertar `gen_empleados`
+--
+
+TRUNCATE TABLE `gen_empleados`;
 -- --------------------------------------------------------
 
 --
@@ -87,6 +102,11 @@ CREATE TABLE `gen_mensajes` (
   `id_tipo_mensaje` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
+--
+-- Truncar tablas antes de insertar `gen_mensajes`
+--
+
+TRUNCATE TABLE `gen_mensajes`;
 -- --------------------------------------------------------
 
 --
@@ -101,6 +121,11 @@ CREATE TABLE `gen_modulos` (
   `orden` int(11) NOT NULL COMMENT 'Orden de impresión del módulo'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
+--
+-- Truncar tablas antes de insertar `gen_modulos`
+--
+
+TRUNCATE TABLE `gen_modulos`;
 --
 -- Volcado de datos para la tabla `gen_modulos`
 --
@@ -123,6 +148,11 @@ CREATE TABLE `gen_permisos` (
   `valor` int(11) NOT NULL COMMENT 'Valor numérico del permiso'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
+--
+-- Truncar tablas antes de insertar `gen_permisos`
+--
+
+TRUNCATE TABLE `gen_permisos`;
 --
 -- Volcado de datos para la tabla `gen_permisos`
 --
@@ -150,12 +180,19 @@ CREATE TABLE `gen_secciones` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
+-- Truncar tablas antes de insertar `gen_secciones`
+--
+
+TRUNCATE TABLE `gen_secciones`;
+--
 -- Volcado de datos para la tabla `gen_secciones`
 --
 
 INSERT INTO `gen_secciones` (`id_seccion`, `nombre`, `descripcion`, `permiso`, `orden`, `id_modulo`) VALUES
 (1, 'Presentación', NULL, 0, 0, 1),
-(2, 'Preguntas frecuentes', NULL, 0, 1, 1);
+(2, 'Preguntas frecuentes', NULL, 0, 1, 1),
+(3, 'Versión', 'Descripción fea de la Versión', 0, 1, 2),
+(4, 'Manual', 'Descripción fea del manual', 0, 1, 2);
 
 -- --------------------------------------------------------
 
@@ -170,6 +207,11 @@ CREATE TABLE `gen_tipo_acceso` (
   `descripcion` text COLLATE latin1_spanish_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
+--
+-- Truncar tablas antes de insertar `gen_tipo_acceso`
+--
+
+TRUNCATE TABLE `gen_tipo_acceso`;
 -- --------------------------------------------------------
 
 --
@@ -183,6 +225,11 @@ CREATE TABLE `gen_tipo_mensaje` (
   `descripcion` text COLLATE latin1_general_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
+--
+-- Truncar tablas antes de insertar `gen_tipo_mensaje`
+--
+
+TRUNCATE TABLE `gen_tipo_mensaje`;
 --
 -- Índices para tablas volcadas
 --
@@ -279,7 +326,7 @@ ALTER TABLE `gen_permisos`
 -- AUTO_INCREMENT de la tabla `gen_secciones`
 --
 ALTER TABLE `gen_secciones`
-  MODIFY `id_seccion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_seccion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `gen_tipo_acceso`
@@ -292,7 +339,208 @@ ALTER TABLE `gen_tipo_acceso`
 --
 ALTER TABLE `gen_tipo_mensaje`
   MODIFY `id_tipo_mensaje` int(11) NOT NULL AUTO_INCREMENT;
-COMMIT;
+
+
+--
+-- Metadatos
+--
+USE `phpmyadmin`;
+
+--
+-- Metadatos para la tabla gen_accede
+--
+
+--
+-- Truncar tablas antes de insertar `pma__column_info`
+--
+
+TRUNCATE TABLE `pma__column_info`;
+--
+-- Truncar tablas antes de insertar `pma__table_uiprefs`
+--
+
+TRUNCATE TABLE `pma__table_uiprefs`;
+--
+-- Truncar tablas antes de insertar `pma__tracking`
+--
+
+TRUNCATE TABLE `pma__tracking`;
+--
+-- Metadatos para la tabla gen_accede_his
+--
+
+--
+-- Truncar tablas antes de insertar `pma__column_info`
+--
+
+TRUNCATE TABLE `pma__column_info`;
+--
+-- Truncar tablas antes de insertar `pma__table_uiprefs`
+--
+
+TRUNCATE TABLE `pma__table_uiprefs`;
+--
+-- Truncar tablas antes de insertar `pma__tracking`
+--
+
+TRUNCATE TABLE `pma__tracking`;
+--
+-- Metadatos para la tabla gen_empleados
+--
+
+--
+-- Truncar tablas antes de insertar `pma__column_info`
+--
+
+TRUNCATE TABLE `pma__column_info`;
+--
+-- Truncar tablas antes de insertar `pma__table_uiprefs`
+--
+
+TRUNCATE TABLE `pma__table_uiprefs`;
+--
+-- Truncar tablas antes de insertar `pma__tracking`
+--
+
+TRUNCATE TABLE `pma__tracking`;
+--
+-- Metadatos para la tabla gen_mensajes
+--
+
+--
+-- Truncar tablas antes de insertar `pma__column_info`
+--
+
+TRUNCATE TABLE `pma__column_info`;
+--
+-- Truncar tablas antes de insertar `pma__table_uiprefs`
+--
+
+TRUNCATE TABLE `pma__table_uiprefs`;
+--
+-- Truncar tablas antes de insertar `pma__tracking`
+--
+
+TRUNCATE TABLE `pma__tracking`;
+--
+-- Metadatos para la tabla gen_modulos
+--
+
+--
+-- Truncar tablas antes de insertar `pma__column_info`
+--
+
+TRUNCATE TABLE `pma__column_info`;
+--
+-- Truncar tablas antes de insertar `pma__table_uiprefs`
+--
+
+TRUNCATE TABLE `pma__table_uiprefs`;
+--
+-- Truncar tablas antes de insertar `pma__tracking`
+--
+
+TRUNCATE TABLE `pma__tracking`;
+--
+-- Metadatos para la tabla gen_permisos
+--
+
+--
+-- Truncar tablas antes de insertar `pma__column_info`
+--
+
+TRUNCATE TABLE `pma__column_info`;
+--
+-- Truncar tablas antes de insertar `pma__table_uiprefs`
+--
+
+TRUNCATE TABLE `pma__table_uiprefs`;
+--
+-- Truncar tablas antes de insertar `pma__tracking`
+--
+
+TRUNCATE TABLE `pma__tracking`;
+--
+-- Metadatos para la tabla gen_secciones
+--
+
+--
+-- Truncar tablas antes de insertar `pma__column_info`
+--
+
+TRUNCATE TABLE `pma__column_info`;
+--
+-- Truncar tablas antes de insertar `pma__table_uiprefs`
+--
+
+TRUNCATE TABLE `pma__table_uiprefs`;
+--
+-- Truncar tablas antes de insertar `pma__tracking`
+--
+
+TRUNCATE TABLE `pma__tracking`;
+--
+-- Metadatos para la tabla gen_tipo_acceso
+--
+
+--
+-- Truncar tablas antes de insertar `pma__column_info`
+--
+
+TRUNCATE TABLE `pma__column_info`;
+--
+-- Truncar tablas antes de insertar `pma__table_uiprefs`
+--
+
+TRUNCATE TABLE `pma__table_uiprefs`;
+--
+-- Truncar tablas antes de insertar `pma__tracking`
+--
+
+TRUNCATE TABLE `pma__tracking`;
+--
+-- Metadatos para la tabla gen_tipo_mensaje
+--
+
+--
+-- Truncar tablas antes de insertar `pma__column_info`
+--
+
+TRUNCATE TABLE `pma__column_info`;
+--
+-- Truncar tablas antes de insertar `pma__table_uiprefs`
+--
+
+TRUNCATE TABLE `pma__table_uiprefs`;
+--
+-- Truncar tablas antes de insertar `pma__tracking`
+--
+
+TRUNCATE TABLE `pma__tracking`;
+--
+-- Metadatos para la base de datos sge_proyecto
+--
+
+--
+-- Truncar tablas antes de insertar `pma__bookmark`
+--
+
+TRUNCATE TABLE `pma__bookmark`;
+--
+-- Truncar tablas antes de insertar `pma__relation`
+--
+
+TRUNCATE TABLE `pma__relation`;
+--
+-- Truncar tablas antes de insertar `pma__savedsearches`
+--
+
+TRUNCATE TABLE `pma__savedsearches`;
+--
+-- Truncar tablas antes de insertar `pma__central_columns`
+--
+
+TRUNCATE TABLE `pma__central_columns`;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
