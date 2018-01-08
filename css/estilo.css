@@ -1,0 +1,155 @@
+/*    Importa el reset del diseño por defecto del navegador    */
+@import url("reset.css");
+
+/* configuraciones generales */
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;  
+}
+
+p {
+    padding: 10px;
+}
+
+/* HEADER */
+
+header {
+    height: 120px;
+    background-image: url("../imagenes/fondo.png");
+    background-repeat: repeat-x;
+    width: 100%;
+    display: block;
+    padding: 2em;
+}
+
+#titulo {
+    float: left;
+    padding: 2em;
+    width: 70%;
+}
+
+#titulo > img{
+    float: left;
+    padding-right: 1em;
+}
+
+#titulo > h1{
+    font-size: 30px;
+    color: #0288d1;
+    padding-top: 1.7em;
+}
+
+#titulo > p {
+    color: #77b55a;
+    font-weight: bold;
+}
+
+#login{
+    float: left;
+    padding: 0.5em;
+    width: 15%;
+}
+
+#login > form > p {
+    padding: 5px 10px 5px 10px;
+}
+
+/* BARRA NAVEGACIÓN */
+
+nav {
+    float: left;
+    height: auto;
+    width: 100%;
+    padding: 1.3em;
+}
+
+.menu {
+  color: #14396A !important;
+  text-shadow: 1px 1px 0px #7CACDE;
+  box-shadow: 1px 1px 1px #BEE2F9;
+  padding: 10px 25px;
+  border: 1px solid #3866A3;
+  background: #63B8EE;
+  background: linear-gradient(top,  #63B8EE,  #468CCF);
+  background: -ms-linear-gradient(top,  #63B8EE,  #468CCF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#63B8EE), to(#468CCF));
+  background: -moz-linear-gradient(top,  #63B8EE,  #468CCF);
+  float: left;
+  margin-right: 1em;
+}
+.menu:hover {
+  color: #FFFFFF !important;
+  background: #468CCF;
+  background: linear-gradient(top,  #468CCF,  #63B8EE);
+  background: -ms-linear-gradient(top,  #468CCF,  #63B8EE);
+  background: -webkit-gradient(linear, left top, left bottom, from(#468CCF), to(#63B8EE));
+  background: -moz-linear-gradient(top,  #468CCF,  #63B8EE);
+  cursor: pointer;
+}
+
+/* CONTENIDO DE LA APLICACIÓN */
+
+aside {
+    float: left;
+    width: 15%;
+    padding: 1.3em;
+    /* border-right: solid 2px #CCCCCC; */
+}
+
+aside > p {
+    color: #77b55a;
+    font-weight: bold; 
+}
+
+aside > p:hover{
+    color: #0288d1;
+    cursor: pointer;
+}
+
+aside > h3 {
+    font-size: 16px;
+    color: #0288d1;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+section {
+    width: 75%;
+    padding: 1.3em;
+    float: left;
+    border: solid 1px #CCCCCC;
+    min-height: 400px;
+    box-shadow: 2px 2px 19px #D6D6D6;
+    border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        margin-bottom: 15px;
+    height: auto;
+}
+
+article {
+    float: left;
+    width: 100%;
+    padding: 1em;
+    height: auto;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    height: 100px;
+    background-image: url("../imagenes/fondo_pie.png");
+    background-repeat: repeat-x;
+    width: 100%;
+    padding: 1em;
+    clear: both;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    /*color: #77b55a;*/
+}
+footer > p {
+    width: 100%;
+    margin-top: 6em;
+}
