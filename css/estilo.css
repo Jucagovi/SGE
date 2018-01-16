@@ -14,12 +14,13 @@ p {
 /* HEADER */
 
 header {
-    height: 120px;
+    height: auto;
     background-color: #218fb7;
-    width: 99%;
-    display: block;
+    width: 100%;
+    display: flex;
     padding: 2em;
     color: white;
+    box-sizing: border-box;
 }
 
 #titulo {
@@ -57,11 +58,12 @@ header {
 nav {
     float: left;
     height: auto;
-    width: 99%;
+    width: 100%;
     padding: 1.3em;
     background-color: #218fb7;
     margin-top: -1.5em;
     margin-bottom: 1em;
+    box-sizing: border-box;
 }
 
 .menu {
@@ -104,7 +106,6 @@ aside {
     float: left;
     width: 15%;
     padding: 1.3em;
-    /* border-right: solid 2px #CCCCCC; */
 }
 
 aside > p {
@@ -130,7 +131,6 @@ section {
     float: left;
     border: solid 1px #218fb7;
     min-height: 400px;
-    /*box-shadow: 2px 2px 19px #D6D6D6;*/
     border-radius: 2px;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
@@ -161,4 +161,5 @@ footer {
 footer > p {
     width: 100%;
     margin-top: 6em;
+    display: table-cell;
 }
