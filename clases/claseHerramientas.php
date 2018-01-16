@@ -26,7 +26,7 @@
 class Herramientas {
     
     /* Constructor de la clase */
-    function Herramientas(){
+    function __construct(){
         
     }
             

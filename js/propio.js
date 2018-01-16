@@ -1,7 +1,6 @@
 $(document).ready(function(e) {
     
     $(document).on("click", ".menu", function(){
-	//alert($(this).text());
         $.ajax({
             url: './includes/secciones.php',
             type: 'POST',

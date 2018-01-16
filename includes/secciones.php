@@ -12,7 +12,7 @@
         
         $html = "<h3>".$_POST["modulo"]."</h3>";
         while ($fila = $rs->fetch_array()){
-            $html .= "<p id='".$fila["nombre"]."' title='".$fila["descripcion"]."'>".$fila["nombre"]."</p>";
+            $html .= "<p class='seccion' id='".$fila["nombre"]."' title='".$fila["descripcion"]."'>".$fila["nombre"]."</p>";
         }
         echo $html;
     } catch(Exception $e) {

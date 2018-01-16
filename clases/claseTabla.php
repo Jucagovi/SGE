@@ -24,7 +24,7 @@ class Tabla extends Herramientas{
     
     private $tabla;     # El nombre de la tabla sobre la que se van a realizar las funciones
     
-    function Tabla($fea) {
+    function __construct($fea) {
         $this->tabla = $fea;
     }
     
