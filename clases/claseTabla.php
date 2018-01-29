@@ -18,6 +18,8 @@
  * borrar($id)                  Elimina una fila con el $id pasado por parámetro [boleano]
  * insertar($valores)           Inserta un array de valores en la tabla [boleano]
  * mostrar_consulta($valores)   Muestra la sentencia INSERT por pantalla [cadena]
+ * tiene_id()                   Devuelve la presencia o ausencia del campo identificador [boleano]
+ * generar_identificador($id)   Devuelve un identificador para el atributo "id" de HTML. Si existe y no está vacío el campo "identificador" lo asigna. [cadena}
  */
 
 class Tabla extends Herramientas{
@@ -186,4 +188,39 @@ class Tabla extends Herramientas{
             return false;
         }
     }
+    
+    function tiene_id(){
+        try {
+            $conexion = $this->conectar();
+            $rs = $conexion->query("SHOW COLUMNS FROM ".$this->get_tabla()." WHERE FIELD ='identificador'" );
+            if ( $rs->num_rows == 0 ){
+                return false;
+            } else {
+                return true;
+            }
+        } catch(Exception $e){
+            return false;
+        }
+    }
+    
+    function generar_identificador($id){
+        try {
+            if ($this->tiene_id()){
+                $conexion = $this->conectar();
+                $rs = $conexion->query("SELECT identificador FROM ".$this->get_tabla()." WHERE ".$this->obtener_id()."=".$id);
+                $fila = $rs->fetch_array();
+                if ( $fila["identificador"] == "" ){
+                    $feo = $this->get_tabla().$id;   
+                } else {
+                    $feo = $fila["identificador"];
+                }
+            } else {
+                $feo = $this->get_tabla().$id;
+            }
+            return $feo;
+        } catch(Exception $e){
+            return false;
+        }
+    }
+    
 } # Fin de la clase

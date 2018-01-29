@@ -156,7 +156,8 @@ footer {
     bottom: 0;
     text-align: center;
     font-weight: bold;
-    /*color: #77b55a;*/
+    box-sizing: border-box;
+    display: table;
 }
 footer > p {
     width: 100%;
