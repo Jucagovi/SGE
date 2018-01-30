@@ -1,0 +1,12 @@
+
+#ayuda > h3{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#ayuda > .gen_tabla{
+    color: #218fb7;
+    font-weight: bold;
+    margin: 2px 2px 0px 5px;
+}

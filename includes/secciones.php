@@ -12,7 +12,16 @@
         
         $html = "<h3>".$_POST["modulo"]."</h3>";
         while ($fila = $rs->fetch_array()){
+            //Muestro el enlace del primer módulo
             $html .= "<p class='seccion' id='".$feo->generar_identificador($fila["id_seccion"])."' title='".$fila["descripcion"]."'>".$fila["nombre"]."</p>";
+            //Consulto las subsecciones del módulo en cuentión de la tabla gen_subsecciones
+            $rs_sub = $conexion->query("SELECT * FROM gen_subsecciones WHERE id_seccion = ".$fila["id_seccion"]." ORDER BY orden");
+            //Muestro las subsecciones
+            $html .= "<div class='subsecciones' id='sub_".$feo->generar_identificador($fila["id_seccion"])."'>";
+            while ($fila_sub = $rs_sub->fetch_array()){
+                $html .= "<p class='subseccion' id='".$fila_sub["identificador"]."'>".$fila_sub["nombre"]."</p>";
+            }
+            $html .= "</div>";
         }
         echo $html;
        

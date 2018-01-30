@@ -11,7 +11,7 @@
  require_once("../clases/config.php");
 
 // Clases
- include_once '../clases/claseherramientas.php'; 
+ include_once '../clases/claseHerramientas.php'; 
  include_once '../clases/claseTabla.php'; 
 
 ?>

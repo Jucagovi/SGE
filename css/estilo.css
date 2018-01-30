@@ -100,6 +100,19 @@ nav {
     background-color: #c4e2b3;
 }
 
+.subseccion{
+    margin: 4px;
+    background-color: #c4e2b3;
+    color: #218fb7;
+    margin-left: 1.1em;
+    cursor: pointer;
+}
+
+.subseccion:hover{
+    background-color: #218fb7;
+    color: white;
+}
+
 /* CONTENIDO DE LA APLICACIÓN */
 
 aside {
