@@ -140,7 +140,7 @@ aside > h3 {
 
 section {
     width: 75%;
-    padding: 1.3em;
+    /*padding: 1.3em;*/
     float: left;
     border: solid 1px #218fb7;
     min-height: 400px;
