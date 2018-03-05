@@ -1,0 +1,44 @@
+/*TABLAS*/
+#ventas > tr:nth-child(even){
+  background-color: lightblue;
+}
+
+#ventas > td,th{
+  padding: 5px 10px;
+  border: solid 1px #468CCF;
+}
+
+#ventas > th{
+  background-color: #218fb7;
+  color: white;
+  font-weight: bold;
+}
+
+#ventas > button,input[type=submit]{
+  color: #FFFFFF;
+  text-shadow: 1px 1px 0px #7CACDE;
+  box-shadow: 1px 1px 1px #BEE2F9;
+  padding: 5px 10px;
+  border: 1px solid #3866A3;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, from(#63B8EE), to(#468CCF));
+}
+
+/*FORMULARIOS*/
+#ventas > form table td{
+  background-color: white;
+  border: none;
+}
+
+#ventas > form table td:nth-child(even){
+  border-left: 1px solid lightblue;
+}
+
+#ventas > input[type=text]:focus,textarea:focus {
+    background-color: lightblue;
+}
+
+#ventas > input[type=text],textarea {
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}

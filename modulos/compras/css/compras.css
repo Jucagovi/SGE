@@ -1,0 +1,132 @@
+
+
+#gestionProveedores > .gen_tabla{
+    color: #218fb7;
+    font-weight: bold;
+    margin: 2px 2px 0px 5px;
+}
+
+#productoClicado{
+     background-color: rgba(255, 255, 255, 0.8);
+  	 text-align: center;
+  	 align: center;
+}
+
+#pedidoClicado{
+     background-color: rgba(255, 255, 255, 0.8);
+  	 text-align: center;
+  	 align: center;
+}
+
+#tipoClicado{
+     background-color: rgba(255, 255, 255, 0.8);
+  	 text-align: center;
+  	 align: center;
+}
+
+
+#envioClicado{
+     background-color: rgba(255, 255, 255, 0.8);
+  	 text-align: center;
+  	 align: center;
+}
+
+#gestionesPedidos,#gestionesTipos,#gestionesCategorias,#gestionesEnvios,#gestionesMetodos,#gestionesProveedores{
+	display: flex;
+}
+#tablaPedidos,#tablaTipos,#tablaCategorias,#tablaEnvios,#tablaMetodos,#tablaProveedores{
+	width:67%;
+}
+#muestrarioPedido,#muestrarioTipo,#muestrarioCategoria,#muestrarioEnvios,#muestrarioMetodo,#muestrarioProveedor{
+	flex-grow:1;
+}
+
+
+#compras > h1{
+	color: black;
+	text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+	
+}
+#botonesProducto{
+	clear:both;
+}
+#gridProductos{
+	clear:both;
+}
+#tablaTipos{
+	clear:both;
+}
+#tablaCategorias{
+	clear:both;
+}
+#tablaProveedores{
+	clear:both;
+}
+
+[tipo = boton] {
+	float:right;
+	border-radius: 4px;
+	background-color: white;
+    color: black;
+    border: 2px solid #218fb7;
+    padding-top: 8px;
+    padding-right: 18px;
+    padding-bottom: 8px;
+    padding-left: 18px;
+}
+
+#compras > h2{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color:#218fb7;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 18px;
+  color: #218fb7;
+}
+
+
+#gestionTiposProducto > h2{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+#compras > table{
+    border-collapse: collapse;
+    width: 100%;
+}
+#compras > th{
+    text-align: center;
+    background-color: #15779b;
+    color: white;
+}
+#compras > th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+#compras > tr:nth-child(even){background-color: #f7f1de}
+
+#compras > tr:nth-child(1){
+  width: 24%;
+}
+  
+#compras > th:nth-child(1) {
+  width: 24%;
+  background:#218fb7;
+}

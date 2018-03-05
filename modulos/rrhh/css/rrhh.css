@@ -1,0 +1,173 @@
+
+@import url("FA/font-awesome.min.css");
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+.topBar{
+  background-color: #218fb7;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  padding: 1vw;
+  max-height: 2vw;
+}
+
+.topBar .sectionTittle{
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.midCambas{
+margin: .5vw;
+}
+
+/*====================FICHAS DE EMPLEADO=============================*/
+.cambasEmpleados{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.fichaEmpleado{
+  background-color: white;/*#81cff7;*/
+  max-width: 12vw;
+  max-height: 17vw;
+  overflow: hidden;
+  margin: 1vw;
+  border: 2px #218fb7 solid;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.fichaEmpleado:hover{
+  background-color: #c4e2b3;/*#81cff7;*/
+}
+
+.fichaEmpleado > .fotoMarco {
+  border: 2px #218fb7 solid;
+  background-color: white;
+  overflow: hidden;
+  max-width: 90%;
+  margin: auto;
+}
+
+.fichaEmpleado:hover > .fotoMarco {
+  background-color: #c4e2b3;
+}
+
+.fotoMarco > .fotoEmpleado{
+  max-width: 100%;
+}
+
+.fichaEmpleado > .departamento{
+  text-align: center;
+  color: #218fb7;
+  font-weight: bold;
+}
+
+.fichaEmpleado > .textoFicha {
+  color: #218fb7;
+  display: flex;
+  flex-flow: column;
+}
+
+.fichaEmpleado > .textoFicha > .nombreEmpleado {
+font-size: .9rem;
+font-weight: bold;
+}
+/*=============================================================*/
+/*=================FICHAS DEPARTAMENTO=========================*/
+.cambasDepartamento{
+  display: flex;
+  flex-flow: column;
+}
+
+.fichaDepartamento{
+  padding: 1vw;
+  display: flex;
+  justify-content: space-between;
+  color: #218fb7;
+  font-weight: bold;
+  font-size: .9rem;
+  border-bottom: 2px #218fb7 solid;
+}
+
+.fichaDepartamento:hover{
+  background-color: #c4e2b3;
+}
+
+.fichaDepartamento.nombreDepartamento{
+  line-height: 8rem;
+}
+
+.fichaDepartamento .fichaDepartamentoBotonera{
+  color: white;
+}
+
+.fichaDepartamentoBotonera button{
+  color: white;
+  background-color: #218fb7;
+  border-radius: 5px;
+  border: transparent;
+}
+/*=============================================================*/
+/*=================FICHAS PROCESOS SELECCION===================*/
+.itemList{
+  padding: .5vw 1vw;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  color: #218fb7;
+  border-bottom: 2px #218fb7 solid;
+  max-height: 2.5rem;
+}
+
+.itemList:hover{
+  background-color: #c4e2b3;
+}
+
+.itemList .textBlock {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.itemList .fecha{
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+}
+
+.itemList .plazas{
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+}
+
+.itemList  p{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+.itemList  p .proceso{
+  width: 24rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.itemList button{
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
+  background-color: #218fb7;
+  border-radius: 5px;
+  border: transparent;
+}

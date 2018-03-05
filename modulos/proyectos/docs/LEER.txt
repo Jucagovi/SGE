@@ -1,0 +1,10 @@
+Es necesario activar la extensión 'intl' en php.ini 
+para el correcto funcionamiento del módulo.
+
+Hace falta una libreria que hace los pdf, adjunto link de descarga ya que 
+esta pesa demasiado para pasarla por el moodle
+http://www.mpdf1.com/mpdf/index.php
+es la version 6.0, copiar la carpeta mpdf60 del zip descargado en la raiz de la carpeta 
+del modulo
+
+att. Javier Peral, Julio Cezar y Sergio Molina

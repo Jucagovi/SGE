@@ -1,0 +1,115 @@
+
+/*------------------------LISTADO---------------------------------------*/
+#parteSuperior{
+	display:flex;
+  margin: 1% 1%;
+}
+
+#list {
+	width: 45%;
+  margin: 1% 1%;
+}
+
+#formacion > a {
+	text-decoration: none;
+
+}
+
+#formacion > h1{
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#content{
+	width: 45%;
+  margin: auto;
+	padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+#cursosItem {
+
+    font: 15px 'verdana', 'verdana';
+    padding: 0;
+    list-style-type: none;
+    margin-left: 1em;
+    counter-reset: li-counter;
+
+}
+
+/*Características de cada Item de la lista*/
+#cursosItem > li{
+  position: relative;
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+  background-color: #218fb7;
+	border: 1px solid #000;
+	font-style: oblique;
+	font-weight: bold;
+}
+
+#cursosItem > li:before {
+
+  /*Posición de los números de la lista*/
+    position: absolute;
+    top: -0.4em;
+    left: -0.5em;
+    width: 1.8em;
+    height: 1.2em;
+
+    /*Configuración de los números de la lista*/
+    font-size: 1.8em;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+		border: 1px solid #000;
+    color: #464646;
+    background-color: #d0d0d0;
+
+    /*Rotación de los números de la lista*/
+    -webkit-transform: rotate(-20deg);
+
+    /*Muestra los número de la lista*/
+    content: counter(li-counter);
+    /*Por cada item el contador se incrementa*/
+    counter-increment: li-counter;
+}
+
+/*------------------------FORMULARIO---------------------------------------*/
+#formCurso, #formSolicitud {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+
+  /* To see the limits of the form */
+  padding: 1em;
+  border: 1px solid #218fb7;
+  border-radius: 1em;
+}
+
+#formacion > div + div {
+  margin-top: 1em;
+}
+
+.espacioMedio{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#btn_formCursos{
+
+}
+
+#formacion > textarea {
+  /* To properly align multiline text field with their label */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+
+  /* To allow users to resize any textarea vertically
+     It works only on Chrome, Firefox and Safari */
+  resize: vertical;
+}

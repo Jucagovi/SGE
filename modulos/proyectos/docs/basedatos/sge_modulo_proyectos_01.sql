@@ -1,0 +1,2 @@
+INSERT INTO `gen_modulos` (`id_modulo`, `nombre`, `descripcion`, `orden`) VALUES (2, 'Proyectos', NULL, 1);
+INSERT INTO `gen_secciones` (`nombre`, `descripcion`, `permiso`, `orden`, `id_modulo`, `identificador`) VALUES ('Inicio', 'Ver el tablón del módulo', 0, 1, 2, 'tablonProyectos');

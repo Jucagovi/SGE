@@ -1,0 +1,1 @@
+INSERT INTO `gen_empleados` (`id_empleado`, `nombre`, `apellidos`, `fecha_nac`, `fecha_inc`, `usuario`, `contrasena`, `curriculum`, `foto`, `id_departamento`) VALUES ('-1', 'Anonimo', '', '2018-03-04', '2018-03-04', '', '', NULL, NULL, NULL);

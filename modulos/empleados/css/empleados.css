@@ -1,0 +1,29 @@
+
+#empleados > tr, td, th{
+    padding: 10px;
+}
+
+#empleados > ul, li{
+    font-size: 15px;
+    list-style-type: circle;
+    line-height: 20px;
+}
+
+#empleados li.empleado:hover{
+    color: #218fb7;
+    cursor: pointer;
+}
+
+#empleados > tr.categoriaEventos:hover{
+    cursor: pointer;
+    background-color: #BEE2F9;
+}
+
+.infoTabla th{
+    background-color: #218fb7;
+    color: white;
+}
+
+.infoTabla tr:nth-child(odd){
+    background-color: #BEE2F9;
+}

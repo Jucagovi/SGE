@@ -1,0 +1,6 @@
+Si notas algo raro en el código es porque cada uno lo hemos hecho a nuestra manera,
+además de que no hemos podido "sincronizarnos" mucho debido a la falta de tiempo y la
+gran cantidad de trabajo que hemos tenido estas últimas semanas.
+
+En la parte de código de Dani hay algunas referencias a rutas absolutas que pueden dar
+error. Cámbialas si es necesario y por favor no lo tengas muy en cuenta.
